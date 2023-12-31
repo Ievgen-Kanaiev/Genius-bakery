@@ -66,6 +66,8 @@ address {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -86,6 +88,7 @@ ul {
   width: 100%;
   max-width: 1288px;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* button */
@@ -112,7 +115,31 @@ ul {
 
 .link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
+}
+
+/* Header */
+.header {
+  background-color: aquamarine;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 /* hero section */
@@ -133,14 +160,21 @@ ul {
 }
 
 /* Adventages section */
-.adventeges-list {
-  color: var(--color-primary-light);
+.adventages-section {
+  padding: 16px 0;
   background-color: var(--color-brand-light);
+}
+
+.adventeges-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .advemnteges-item {
   font-size: 20px;
   font-weight: 300;
+  color: var(--color-primary-light);
 }
 
 .section-title {
@@ -158,6 +192,16 @@ ul {
   padding-top: 96px;
 }
 
+.tradition-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.tradition-content {
+  max-width: 710px;
+}
+
 .traditions-title {
   margin-bottom: 42px;
 }
@@ -169,6 +213,10 @@ ul {
 
 .traditions-text .uppercase {
   text-transform: uppercase;
+}
+
+.traditions-text.limited {
+  max-width: 340px;
 }
 
 /* Chefs section */
@@ -183,6 +231,22 @@ ul {
 }
 
 /* Format title */
+.formats-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-card {
+  padding: 24px;
+  border: 1px solid red; /* removal */
+  border-radius: 16px;
+}
+
 .format-title {
   font-size: 24px;
   font-weight: 600;
